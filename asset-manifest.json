@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.02a3cb11.chunk.css",
+    "main.js": "/static/js/main.356d49ba.chunk.js",
+    "main.js.map": "/static/js/main.356d49ba.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.33267864.js",
+    "runtime-main.js.map": "/static/js/runtime-main.33267864.js.map",
+    "static/js/2.ad2457b9.chunk.js": "/static/js/2.ad2457b9.chunk.js",
+    "static/js/2.ad2457b9.chunk.js.map": "/static/js/2.ad2457b9.chunk.js.map",
+    "static/js/3.0c64849b.chunk.js": "/static/js/3.0c64849b.chunk.js",
+    "static/js/3.0c64849b.chunk.js.map": "/static/js/3.0c64849b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.02a3cb11.chunk.css.map": "/static/css/main.02a3cb11.chunk.css.map",
+    "static/js/2.ad2457b9.chunk.js.LICENSE.txt": "/static/js/2.ad2457b9.chunk.js.LICENSE.txt",
+    "static/media/1.dd389cb8.jpg": "/static/media/1.dd389cb8.jpg",
+    "static/media/10.e9e3e09d.jpg": "/static/media/10.e9e3e09d.jpg",
+    "static/media/11.5ea43dd6.jpg": "/static/media/11.5ea43dd6.jpg",
+    "static/media/12.03ececb7.jpg": "/static/media/12.03ececb7.jpg",
+    "static/media/13.bb1d0ba1.jpg": "/static/media/13.bb1d0ba1.jpg",
+    "static/media/14.fb7ea927.jpg": "/static/media/14.fb7ea927.jpg",
+    "static/media/2.59d466e5.jpg": "/static/media/2.59d466e5.jpg",
+    "static/media/3.ef859225.jpg": "/static/media/3.ef859225.jpg",
+    "static/media/4.0e451aca.jpg": "/static/media/4.0e451aca.jpg",
+    "static/media/5.97e93487.jpg": "/static/media/5.97e93487.jpg",
+    "static/media/6.6663bca9.jpg": "/static/media/6.6663bca9.jpg",
+    "static/media/7.970a0ae4.jpg": "/static/media/7.970a0ae4.jpg",
+    "static/media/8.830f6cf2.jpg": "/static/media/8.830f6cf2.jpg",
+    "static/media/9.73b54019.jpg": "/static/media/9.73b54019.jpg",
+    "static/media/App.css": "/static/media/Benne-Regular.ttf.d3b8ceb6.eot",
+    "static/media/LorenzoParasResume.4e50e3e1.pdf": "/static/media/LorenzoParasResume.4e50e3e1.pdf",
+    "static/media/dp.c8015c60.jpg": "/static/media/dp.c8015c60.jpg",
+    "static/media/github.7b6ac62d.png": "/static/media/github.7b6ac62d.png",
+    "static/media/linkedin.260f7fc6.png": "/static/media/linkedin.260f7fc6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33267864.js",
+    "static/js/2.ad2457b9.chunk.js",
+    "static/css/main.02a3cb11.chunk.css",
+    "static/js/main.356d49ba.chunk.js"
+  ]
+}
