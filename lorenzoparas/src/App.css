@@ -2,7 +2,6 @@
   margin: 50px;
 }
 
-/* finished */
 #head {
   color:black;
   font-family: 'Benne-Regular';
@@ -14,11 +13,12 @@
 
 #nav-bar {
   float: left;
-  border: 2px solid lightgray;
+  border: 3px solid lightgray;
   padding: 40px;
   position: fixed;
-  height: 80%;
-  width: 11%;
+  height: 80vh;
+  width: 9%;
+  display: block;
 }
 
 #nav {
@@ -35,10 +35,13 @@
 }
 
 #social-link-logos {
+  bottom: 10vh;
+  position: fixed;
+}
+
+#social-link-logo-center {
   display: flex;
   flex-direction: column;
-  bottom: 70px;
-  position: fixed;
 }
 
 #social-link-logos img {
@@ -47,9 +50,10 @@
 }
 
 .container {
-  margin-left: 13%;
+  display: inline-block;
+  margin-left: 15%;
   height: 100%;
-  width: 90%;
+  width: 85%;
 }
 
 .title {
@@ -68,7 +72,6 @@
   width: 100%;
 }
 
-/* Slideshow container */
 .slideshow-container {
   width: 600px;
   height: 600px;
@@ -80,14 +83,12 @@
 .sub-container {
   display: flex;
   align-items: center;
-  width: 100%;
   flex-direction: column;
 }
 
 #languages {
   width: 50%; 
-  margin-left: 30%; 
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 #dp {
@@ -101,10 +102,12 @@
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   font-size: 18px;
-  width: 800px;
+  width: 70%;
   text-align: center;
   line-height: 1.5;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 #resume {
@@ -117,7 +120,6 @@
   font-family: 'Benne-Regular';
   font-size: 40px;
   font-weight: bold;
-  width: 800px;
   text-align: left;
   margin-top: 50px;
 }
@@ -129,7 +131,6 @@
 #project-list {
   text-align: center;
   letter-spacing: 1px;
-  width: 800px;
 }
 
 .contact-input {
@@ -171,14 +172,6 @@ li span {
   position: relative;
 }
 
-
-
-
-
-
-
-
-
 button {
   width: 250px;
   font-family: 'Benne-Regular';
@@ -189,28 +182,223 @@ button {
   padding-top: 0.25cm;
 }
 
-.resume-button {
-  width: 250px;
-  font-family: 'Benne-Regular';
-  font-size: 0.8cm;
-  font-weight: bold;
-  border-width: 0.1cm;
-  border-color: black;
-  padding-top: 0.25cm;
-  margin-left: 130px;
+@media (max-width: 2120px) {
+  #head {
+    display: table-caption;
+    line-height: 1;
+  }
+
+  #nav-bar {
+    width: 6%;
+  }
+
+  #social-link-logos img {
+    width: 100px;
+  }
+
+  .container {
+    margin-left: 12%;
+    width: 88%;
+  }
 }
 
+@media (max-width: 1655px) {
+  #head {
+    font-size: 16px;
+  }
 
+  .nav-item {
+    font-size: 16px;
+  }
 
-/* @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-} */
+  #social-link-logos img {
+    width: 90px;
+  }
+
+  #nav-bar {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .container {
+    margin-left: 13%;
+  }
+
+  #social-link-logos {
+    bottom: 10vh;
+  }
+
+  #nav-bar {
+    padding: 25px;
+  }
+
+  #social-link-logos img {
+    width: 75px;
+  }
+}
+
+/* major */
+@media (max-width: 1325px) {
+  .nav-item {
+    font-size: 14px;
+  }
+
+  #head {
+    font-size: 10px;
+  }
+
+  #nav-bar {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  #social-link-logos {
+    bottom: 12vh;
+  }
+
+  #social-link-logos img {
+    bottom: 12vh;
+    width: 70px;
+  }
+
+  .slideshow-container {
+    width: 450px;
+    height: 450px;
+  }
+
+  .container {
+    width: 85%;
+  }
+}
 
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+@media (max-width: 1100px) {
+  #main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #head {
+    display: block;
+    line-height: 0.1;
+    margin: 0 auto;
+    font-size: 24px;
+  }
+
+  #nav-bar {
+    float: none;
+    position: relative;
+    height: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+  }
+
+  #nav {
+    margin: 20px auto;
+  }
+
+  .nav-item {
+    display: initial;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  #social-link-logos {
+    display: block;
+    position: relative;
+    bottom: initial;
+  }
+
+  #social-link-logo-center img {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+    height: 43px;
+  }
+
+  #social-link-logo-center {
+    flex-direction: row;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .container {
+    margin-top: 50px;
+    margin-left: 0%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .title {
+    width: 300px;
+    font-size: 30px;
+  }
+
+  #description {
+    font-size: 12px;
+    letter-spacing: normal;
+    width: 67%;
+  }
+
+  #main-container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 850px) {
+  #languages {
+    width: 80%;
+  }
+
+  #resume {
+    transform: scale(0.60);
+    margin-top: -125px;
+    margin-left: 15px; 
+  }
+}
+
+@media (max-width: 550px) {
+  .nav-item {
+    font-size: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  #contact-form {
+    width: 80%;
+  }
+
+  #languages {
+    width: 100%;
+  }
+
+  .title {
+    width: 200px;
+    font-size: 20px;
+  }
+
+  .slideshow-container, #dp {
+    width: 250px;
+    height: 250px;
+  }
+
+  #social-link-logo-center img {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 70px;
+    height: 20px;
+  }
+}
+
 
 @keyframes fade {
   from {opacity: .4} 

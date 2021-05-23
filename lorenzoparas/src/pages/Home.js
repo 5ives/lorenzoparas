@@ -1,5 +1,5 @@
 import "../App.css";
-import React, { Component } from 'react';
+import React from 'react';
 import one from "../images/1.jpg";
 import two from "../images/2.jpg";
 import three from "../images/3.jpg";
@@ -15,19 +15,17 @@ import twelve from "../images/12.jpg";
 import thirteen from "../images/13.jpg";
 import fourteen from "../images/14.jpg";
 
+/* eslint-disable */
 function Home() {
     let [slideIndex, setSlideIndex] = React.useState(0);
-    let interval;
 
     React.useEffect(() => {
         showSlides();
-    }, []);
+    });
 
     React.useEffect(() => {
-        interval = setInterval(showSlides, 2000);
-        return () => {
-            clearInterval(interval);
-        }   
+        let interval = setInterval(showSlides, 2000);
+        return () => clearInterval(interval);
     }, [slideIndex]);
 
     const showSlides = () => {

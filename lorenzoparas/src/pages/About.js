@@ -1,8 +1,5 @@
 import "../App.css";
-import ResumePDF from "./Resume";
 import ProfilePicture from '../images/dp.jpg';
-import LorenzoParasResume from '../files/LorenzoParasResume.pdf';
-import { Document, Page } from 'react-pdf';
 
 function About() {
   	return (
@@ -13,7 +10,7 @@ function About() {
                     <h1>about me</h1>
                 </div>
 
-                <img id="dp" src={ProfilePicture}/>
+                <img id="dp" src={ProfilePicture} alt="profile-pic"/>
 
                 <div id="description">
                 

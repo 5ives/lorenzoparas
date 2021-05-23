@@ -8,7 +8,7 @@ function Projects() {
                     <h1>projects</h1>
                 </div>
                 <div id="project-list">
-                    <a target="_blank" href="https://github.com/5ives/recipeScraper">recipeScraper</a>
+                    <a rel="noreferrer" target="_blank" href="https://github.com/5ives/recipeScraper">recipeScraper</a>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@ function NavBar() {
   	return (
 	  	<div id="nav-bar">
 			<div id="head">
-				<Link to=""><h1>lorenzo paras.</h1></Link>
+				<Link to="/"><h1>lorenzo paras.</h1></Link>
 			</div>
 			<div id="nav">
 				<Link to="/about" class="nav-item">about me</Link>
@@ -18,12 +18,14 @@ function NavBar() {
 				<Link to="/contact" class="nav-item">contact me!</Link>
 			</div>
 			<div id="social-link-logos">
-				<a href="https://www.linkedin.com/in/lorenzo-paras/">
-					<img src={linkedin}/>
-				</a>
-				<a href="https://github.com/5ives">
-					<img src={github}/>
-				</a>
+				<div id="social-link-logo-center">
+					<a href="https://www.linkedin.com/in/lorenzo-paras/">
+						<img src={linkedin} alt="linked-in-logo"/>
+					</a>
+					<a href="https://github.com/5ives">
+						<img src={github} alt="github-logo"/>
+					</a>
+				</div>
 			</div>
 		</div>
 	);
