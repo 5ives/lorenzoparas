@@ -1,42 +1,111 @@
 import "../App.css";
+import ProfilePicture from '../images/dp.jpg';
+import Button from '@material-ui/core/Button';
+import FadeIn from 'react-fade-in';
+
+const contentStyle = {
+    margin: '8vh 8vw 8vh 8vw',
+    textAlign: 'left',
+    display: 'inline-block',
+    backgroundColor: '#212121',
+    marginLeft: '8vw',
+	width: 'min(1200px, 70vw)',
+	position: 'relative',
+    flexDirection: 'column',
+}
+
+const headerStyle = {
+    color: 'white',
+    fontSize: '100px',
+    letterSpacing: '1px',
+    fontWeight: '600',
+    display: 'flex',
+    flexDirection: 'row'
+};
+
+const subHeaderStyle = {
+    color: 'lightgrey',
+    fontSize: '50px'
+};
+
+const dpStyle = {
+    width: '140px',
+    height: '140px',
+    marginLeft: '20px'
+}
+
+const formFieldStyle = {
+    fontFamily: 'Roboto',
+    color: 'lightgrey',
+    fontSize: '48px',
+    fontWeight: 100
+};
+
+const formInputStyle = {
+    fontSize: '24px',
+    padding: '12px',
+    borderRadius: '18px',
+    marginBottom: '24px'
+}
 
 function Contact() {
   	return (
-		<div class='container'>
-            <div class='sub-container'>
-                <div class="title">
-                    <h1>contact me!</h1>
+        <FadeIn delay={200}>
+            <div style={contentStyle}>
+                <div style={headerStyle}>
+                    /contact-<span style={{color: '#FF4545'}}>me!</span>
+                    <img style={dpStyle} src={ProfilePicture} alt="profile-pic"/>
                 </div>
-                <div id="contact-form">
+                <div style={{marginTop: '-45px'}}>
+                    <h3 style={subHeaderStyle}>
+                        (if you want to)
+                    </h3>
+                </div>
+                <div>
                     <form action="https://formspree.io/f/mnqooyqw" method="POST">
-                        <div class="contact-input">
+                        <div style={formFieldStyle}>
                             <label>
-                            Name:
-                            <input type="text" name="Name"/>
+                                <div>Name:</div>
+                                <input 
+                                    type="text" 
+                                    name="Name"
+                                    size={40}
+                                    style={formInputStyle}
+                                />
                             </label>
                         </div>
-                        
-                        <div class="contact-input">
+                        <div style={formFieldStyle}>
                             <label>
-                            Email:
-                            <input type="text" name="Email"/>
+                                <div>Email:</div>
+                                <input 
+                                    type="email" 
+                                    name="Email"
+                                    size={40}
+                                    style={formInputStyle}
+                                />
                             </label>
                         </div>
-                        
-                        <div class="contact-input">
+                        <div style={formFieldStyle}>
                             <label>
-                            Message:
-                            <textarea name="Message"></textarea>
+                                <div>Message:</div>
+                                <textarea 
+                                    name="Message"
+                                    size={40}
+                                    style={formInputStyle}
+                                />
                             </label>
                         </div>
-                        
-                        <div id="contact-submit">
-                            <button type="submit">Submit</button>
-                        </div>
+                        <Button 
+                            variant="contained" 
+                            color="primary"
+                            type="submit"
+                        >
+                            Submit
+                        </Button>
                     </form>
                 </div>
             </div>
-        </div>
+        </FadeIn>
 	);
 }
 
