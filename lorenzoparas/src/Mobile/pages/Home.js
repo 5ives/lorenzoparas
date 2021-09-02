@@ -1,9 +1,8 @@
-import "../App.css";
 import React from 'react';
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import FadeIn from 'react-fade-in';
-import ProfilePicture from '../images/dp.jpg';
+import ProfilePicture from '../../images/dp.jpg';
 
 const wrapperStyle = {
     display: 'flex',
@@ -15,7 +14,7 @@ const wrapperStyle = {
 
 const homeStyle = {
 	marginLeft: '8vw',
-	width: 'min(1200px, 70vw)',
+	width: 'min(1200px, 84vw)',
 	backgroundColor: '#212121',
 	position: 'relative',
 	display: 'flex',
@@ -24,7 +23,7 @@ const homeStyle = {
 
 const headerStyle = {
     color: 'white',
-    fontSize: '100px',
+    fontSize: '40px',
     letterSpacing: '1px',
     fontWeight: '600',
     display: 'flex',
@@ -33,21 +32,32 @@ const headerStyle = {
 
 const subHeaderStyle = {
     color: 'lightgrey',
-    fontSize: '50px'
+    fontSize: '20px'
 };
 
 const paragraphStyle = {
     fontFamily: 'Roboto',
     color: 'lightgrey',
-    fontSize: '18px',
+    fontSize: '12px',
     fontWeight: 100,
     lineHeight: 1.5,
     fontStretch: 'ultra-expanded'
 };
 
 const dpStyle = {
-    width: '140px',
-    height: '140px',
+    width: '60px',
+    height: '60px',
+    position: 'relative'
+}
+
+const headerTextStyle = {
+    width: 'fit-content'
+}
+
+const headerImageStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    width: 'fit-content',
     marginLeft: '20px'
 }
 
@@ -56,20 +66,24 @@ function Home() {
         <div style={wrapperStyle}>
             <div style={homeStyle}>
                 <div style={headerStyle}>
-                    <Typist>
-                        hey, I'm <span style={{color: '#FF4545'}}>Lorenzo!</span>
-                    </Typist>
-                    <FadeIn delay={1500}>
-                        <img style={dpStyle} src={ProfilePicture} alt="profile-pic"/>
-                    </FadeIn>
+                    <div style={headerTextStyle}>
+                        <Typist style={{border: '2px solid red'}}>
+                            hey, I'm <span style={{color: '#FF4545'}}>Lorenzo!</span>
+                        </Typist>
+                    </div>
+                    <div style={headerImageStyle}>
+                        <FadeIn delay={1500}>
+                            <img style={dpStyle} src={ProfilePicture} alt="profile-pic"/>
+                        </FadeIn>
+                    </div>
                 </div>
                 <FadeIn delay={1800}>
-                    <div style={{marginTop: '-65px'}}>
+                    <div>
                         <h3 style={subHeaderStyle}>
-                            I find creating tech to be pretty enjoyable.
+                            I find creating mobile tech to be pretty enjoyable.
                         </h3>
                     </div>
-                    <div style={{marginTop: '-35px'}}>
+                    <div>
                         <p style={paragraphStyle}>
                             I'm a software engineer based in <span style={{color: '#FF4545'}}>Sydney, Australia</span>,
                             where I'm currently in my final term of my computer science

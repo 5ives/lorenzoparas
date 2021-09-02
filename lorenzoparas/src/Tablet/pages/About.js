@@ -1,6 +1,4 @@
-import "../App.css";
-
-import ProfilePicture from '../images/dp.jpg';
+import ProfilePicture from '../../images/dp.jpg';
 import FadeIn from 'react-fade-in';
 
 const contentStyle = {
@@ -9,14 +7,14 @@ const contentStyle = {
     display: 'inline-block',
     backgroundColor: '#212121',
     marginLeft: '8vw',
-	width: 'min(1200px, 70vw)',
+	width: 'min(1200px, 84vw)',
 	position: 'relative',
     flexDirection: 'column',
 }
 
 const headerStyle = {
     color: 'white',
-    fontSize: '100px',
+    fontSize: '60px',
     letterSpacing: '1px',
     fontWeight: '600',
     display: 'flex',
@@ -25,20 +23,20 @@ const headerStyle = {
 
 const subHeaderStyle = {
     color: 'lightgrey',
-    fontSize: '50px'
+    fontSize: '30px'
 };
 
 const paragraphStyle = {
     fontFamily: 'Roboto',
     color: 'lightgrey',
-    fontSize: '18px',
+    fontSize: '14px',
     fontWeight: 100,
     lineHeight: 1.5
 };
 
 const dpStyle = {
-    width: '140px',
-    height: '140px',
+    width: '80px',
+    height: '80px',
     marginLeft: '20px'
 }
 
@@ -50,12 +48,12 @@ function About() {
                     /about-<span style={{color: '#FF4545'}}>me</span>
                     <img style={dpStyle} src={ProfilePicture} alt="profile-pic"/>
                 </div>
-                <div style={{marginTop: '-45px'}}>
+                <div style={{marginTop: '-15px'}}>
                     <h3 style={subHeaderStyle}>
                         (some stuff about me)
                     </h3>
                 </div>
-                <div style={{marginTop: '-20px'}}>       
+                <div style={{marginTop: '-15px'}}>       
                     <p style={paragraphStyle}>Hi, my name's Lorenzo! I'm based in
                         <strong> Sydney, Australia.</strong>
                     </p> 

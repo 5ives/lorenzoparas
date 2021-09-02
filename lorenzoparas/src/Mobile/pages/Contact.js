@@ -1,5 +1,4 @@
-import "../App.css";
-import ProfilePicture from '../images/dp.jpg';
+import ProfilePicture from '../../images/dp.jpg';
 import Button from '@material-ui/core/Button';
 import FadeIn from 'react-fade-in';
 
@@ -9,14 +8,14 @@ const contentStyle = {
     display: 'inline-block',
     backgroundColor: '#212121',
     marginLeft: '8vw',
-	width: 'min(1200px, 70vw)',
+	width: 'min(1200px, 84vw)',
 	position: 'relative',
     flexDirection: 'column',
 }
 
 const headerStyle = {
     color: 'white',
-    fontSize: '100px',
+    fontSize: '30px',
     letterSpacing: '1px',
     fontWeight: '600',
     display: 'flex',
@@ -25,27 +24,27 @@ const headerStyle = {
 
 const subHeaderStyle = {
     color: 'lightgrey',
-    fontSize: '50px'
+    fontSize: '15px'
 };
 
 const dpStyle = {
-    width: '140px',
-    height: '140px',
-    marginLeft: '20px'
+    width: '50px',
+    height: '50px',
+    marginLeft: '10px'
 }
 
 const formFieldStyle = {
     fontFamily: 'Roboto',
     color: 'lightgrey',
-    fontSize: '48px',
+    fontSize: '15px',
     fontWeight: 100
 };
 
 const formInputStyle = {
-    fontSize: '24px',
-    padding: '12px',
-    borderRadius: '18px',
-    marginBottom: '24px'
+    fontSize: '10px',
+    padding: '4px',
+    borderRadius: '10px',
+    marginBottom: '12px'
 }
 
 function Contact() {
@@ -56,7 +55,7 @@ function Contact() {
                     /contact-<span style={{color: '#FF4545'}}>me!</span>
                     <img style={dpStyle} src={ProfilePicture} alt="profile-pic"/>
                 </div>
-                <div style={{marginTop: '-45px'}}>
+                <div>
                     <h3 style={subHeaderStyle}>
                         (if you want to)
                     </h3>
@@ -95,11 +94,7 @@ function Contact() {
                                 />
                             </label>
                         </div>
-                        <Button 
-                            variant="contained" 
-                            color="primary"
-                            type="submit"
-                        >
+                        <Button variant="contained" color="primary" type="submit" size="small">
                             Submit
                         </Button>
                     </form>

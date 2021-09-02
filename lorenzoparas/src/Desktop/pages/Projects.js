@@ -1,6 +1,5 @@
-import "../App.css";
 import FadeIn from 'react-fade-in';
-import PhotoGrid from "../components/PhotoGrid";
+import { Fade } from "@material-ui/core";
 
 const contentStyle = {
     margin: '8vh 8vw 8vh 8vw',
@@ -8,7 +7,7 @@ const contentStyle = {
     display: 'inline-block',
     backgroundColor: '#212121',
     marginLeft: '8vw',
-	width: 'min(1200px, 70vw)',
+	width: 'min(1200px, 65vw)',
 	position: 'relative',
     flexDirection: 'column',
 }
@@ -27,22 +26,33 @@ const subHeaderStyle = {
     fontSize: '50px'
 };
 
-function Gallery() {
-    return (
+const projectStyle = {
+    color: 'lightgrey',
+    fontSize: '50px',
+    textDecoration: 'none'
+};
+
+function Projects() {
+  	return (
         <FadeIn delay={200}>
             <div style={contentStyle}>
                 <div style={headerStyle}>
-                    /<span style={{color: '#FF4545'}}>gallery</span>
+                    /software-<span style={{color: '#FF4545'}}>projects</span>
                 </div>
                 <div style={{marginTop: '-45px'}}>
                     <h3 style={subHeaderStyle}>
-                        (pictures from endeavours)
+                        (stuff i've worked on)
                     </h3>
                 </div>
-                <PhotoGrid/>
+                <a rel="noreferrer" target="_blank" href="https://github.com/lorenzoparas/recipeScraper">
+                    <h3 style={projectStyle}>recipeScraper</h3>
+                </a>
+                <a rel="noreferrer" target="_blank" href="https://github.com/lorenzoparas/lorenzoparas">
+                    <h3 style={projectStyle}>lorenzoparas (this site!)</h3>
+                </a>
             </div>
         </FadeIn>
-    );
+	);
 }
 
-export default Gallery;
+export default Projects;

@@ -3,7 +3,13 @@ import listReactFiles from 'list-react-files'
 
 const picStyle = {
     height: '200px',
-    width: '200px'
+    width: '200px',
+    margin: '2px',
+    borderRadius: '5px'
+}
+
+const picWrapperStyle = {
+    textAlign: 'center'
 }
 
 function PhotoGrid() {
@@ -19,7 +25,7 @@ function PhotoGrid() {
     }
 
     return (
-        <div>
+        <div style={picWrapperStyle}>
             {
                 (images) && images.map((i) => {
                     console.log(i.default)

@@ -1,5 +1,4 @@
-import "../App.css";
-import LorenzoParasResume from '../files/LorenzoParasResume.pdf';
+import LorenzoParasResume from '../../files/LorenzoParasResume.pdf';
 import React from 'react';
 import FadeIn from 'react-fade-in';
 import Button from '@material-ui/core/Button';
@@ -10,7 +9,7 @@ const contentStyle = {
     display: 'inline-block',
     backgroundColor: '#212121',
     marginLeft: '8vw',
-	width: 'min(1200px, 70vw)',
+	width: 'min(1200px, 65vw)',
 	position: 'relative',
     flexDirection: 'column',
 	color: 'white'

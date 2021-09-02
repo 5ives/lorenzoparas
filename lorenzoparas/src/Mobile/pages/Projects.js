@@ -1,4 +1,3 @@
-import "../App.css";
 import FadeIn from 'react-fade-in';
 import { Fade } from "@material-ui/core";
 
@@ -8,14 +7,14 @@ const contentStyle = {
     display: 'inline-block',
     backgroundColor: '#212121',
     marginLeft: '8vw',
-	width: 'min(1200px, 70vw)',
+	width: 'min(1200px, 65vw)',
 	position: 'relative',
     flexDirection: 'column',
 }
 
 const headerStyle = {
     color: 'white',
-    fontSize: '100px',
+    fontSize: '30px',
     letterSpacing: '1px',
     fontWeight: '600',
     display: 'flex',
@@ -24,12 +23,12 @@ const headerStyle = {
 
 const subHeaderStyle = {
     color: 'lightgrey',
-    fontSize: '50px'
+    fontSize: '15px'
 };
 
 const projectStyle = {
     color: 'lightgrey',
-    fontSize: '50px',
+    fontSize: '15px',
     textDecoration: 'none'
 };
 
@@ -40,7 +39,7 @@ function Projects() {
                 <div style={headerStyle}>
                     /software-<span style={{color: '#FF4545'}}>projects</span>
                 </div>
-                <div style={{marginTop: '-45px'}}>
+                <div style={{marginTop: '-15px'}}>
                     <h3 style={subHeaderStyle}>
                         (stuff i've worked on)
                     </h3>

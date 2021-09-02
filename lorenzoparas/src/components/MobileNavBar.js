@@ -5,35 +5,46 @@ import {
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const navBarStyle = {
-	height: 'fit-content',
-	position: 'fixed',
-	width: '165px',
-	right: '8vw',
-	bottom: '10vh',
+	display: 'flex',
+	flexDirection: 'column',
 	fontFamily: 'Benne-Regular',
-	textAlign: 'center'
+	textAlign: 'center',
+	zIndex: 1,
+	padding: '8px'
 }
 
 const navItemStyle = {
 	textDecoration: 'none',
 	color: 'white',
-	fontSize: '24px'
+	fontSize: '10px'
 }
 
 const navSocialStyle = {
 	display: 'flex',
-	justifyContent: 'flex-end',
-	marginTop: '10%'
+	justifyContent: 'center',
+	margin: '1%'
 }
 
-function NavBar() {
+const linkStyle = {
+	display: 'flex',
+	flexDirection: 'row',
+	justifyContent: 'space-evenly'
+}
+
+const socialLinkStyle = {
+	margin: '5px 20px 5px 20px'
+}
+
+function MobileNavBar() {
 
   	return (
 	  	<div style={navBarStyle}>
-			<div style={{textAlign: 'right'}}>
+			<div>
 				<Link to="/" style={navItemStyle}>
 					<h1 style={navItemStyle}>lorenzo paras.</h1>
 				</Link>
+			</div>
+			<div style={linkStyle}>
 				<div>
 					<Link to="/about" style={navItemStyle}>
 						about-me
@@ -61,15 +72,19 @@ function NavBar() {
 				</div>
 			</div>
 			<div style={navSocialStyle}>
-				<a rel="noreferrer" target="_blank" href="https://github.com/lorenzoparas">
-					<FaGithub size={"24px"} color={"white"}/>
-				</a>
-				<a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/lorenzo-paras/">
-					<FaLinkedin size={"24px"} color={"white"}/>
-				</a>
+				<div style={socialLinkStyle}>
+					<a rel="noreferrer" target="_blank" href="https://github.com/lorenzoparas">
+						<FaGithub size={"12px"} color={"white"}/>
+					</a>
+				</div>
+				<div style={socialLinkStyle}>
+					<a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/lorenzo-paras/">
+						<FaLinkedin size={"12px"} color={"white"}/>
+					</a>
+				</div>
 			</div>
 		</div>
 	);
 }
 
-export default NavBar;
+export default MobileNavBar;
