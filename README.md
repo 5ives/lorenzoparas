@@ -117,7 +117,7 @@ Contributions are what make the open source community such an amazing place to l
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@ivesparas](https://twitter.com/ivesparas) - email
+Lorenzo Paras - [@ivesparas](https://twitter.com/ivesparas) - ivesparas@gmail.com
 
 Project Link: [https://github.com/lorenzoparas/lorenzoparas/](https://github.com/lorenzoparas/lorenzoparas/)
 
