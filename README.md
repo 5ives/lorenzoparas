@@ -96,7 +96,7 @@ To use this website, start the website using:
    npm start
    ```
    
-The website should then be active on [http://localhost:3000](localhost:3000).
+The website should then be active on [localhost:3000](http://localhost:3000).
 
 <!-- ROADMAP -->
 ## Roadmap
