@@ -80,7 +80,7 @@ function Home() {
                 <FadeIn delay={1800}>
                     <div>
                         <h3 style={subHeaderStyle}>
-                            I find creating mobile tech to be pretty enjoyable.
+                            I find creating tech to be pretty enjoyable.
                         </h3>
                     </div>
                     <div>
