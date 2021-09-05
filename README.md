@@ -10,7 +10,7 @@
   <h3 align="center">lorenzoparas</h3>
 
   <p align="center">
-    Welcome to my portfolio site's repo!
+    Welcome to my portfolio site!
     <br />
     <a href="https://github.com/lorenzoparas/lorenzoparas/"><strong>Explore the docs »</strong></a>
     <br />
@@ -90,12 +90,14 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To use this website, start the website using:
+To use this website locally, start the website using:
    ```sh
    npm start
    ```
    
 The website should then be active on [localhost:3000](http://localhost:3000).
+
+This website is also online on [lorenzoparas.me](lorenzoparas.me).
 
 <!-- ROADMAP -->
 ## Roadmap
