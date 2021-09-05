@@ -15,7 +15,7 @@
     <a href="https://github.com/lorenzoparas/lorenzoparas/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/lorenzoparas/lorenzoparas/">View Demo</a>
+    <a href="https://lorenzoparas.me/">View Demo</a>
     ·
     <a href="https://github.com/lorenzoparas/lorenzoparas/issues">Report Bug</a>
     ·
