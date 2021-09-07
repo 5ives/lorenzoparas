@@ -1,5 +1,5 @@
 import FadeIn from 'react-fade-in';
-import { Fade } from "@material-ui/core";
+import ProjectGrid from '../../components/ProjectGrid';
 
 const contentStyle = {
     margin: '8vh 8vw 8vh 8vw',
@@ -26,12 +26,6 @@ const subHeaderStyle = {
     fontSize: '15px'
 };
 
-const projectStyle = {
-    color: 'lightgrey',
-    fontSize: '15px',
-    textDecoration: 'none'
-};
-
 function Projects() {
   	return (
         <FadeIn delay={200}>
@@ -44,12 +38,7 @@ function Projects() {
                         (stuff i've worked on)
                     </h3>
                 </div>
-                <a rel="noreferrer" target="_blank" href="https://github.com/lorenzoparas/recipeScraper">
-                    <h3 style={projectStyle}>recipeScraper</h3>
-                </a>
-                <a rel="noreferrer" target="_blank" href="https://github.com/lorenzoparas/lorenzoparas">
-                    <h3 style={projectStyle}>lorenzoparas (this site!)</h3>
-                </a>
+                <ProjectGrid/>
             </div>
         </FadeIn>
 	);

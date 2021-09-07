@@ -2,6 +2,7 @@ import LorenzoParasResume from '../../files/LorenzoParasResume.pdf';
 import React from 'react';
 import FadeIn from 'react-fade-in';
 import Button from '@material-ui/core/Button';
+import ExperienceGrid from '../../components/ExperienceGrid';
 
 const contentStyle = {
     margin: '8vh 8vw 8vh 8vw',
@@ -41,9 +42,10 @@ function WorkExperiences() {
 						(places i've worked at in the past and present)
 					</h3>
 				</div>
-				<Button variant="contained" color="primary" type="submit" size='small'>
+				{/* <Button variant="contained" color="primary" type="submit" size='small'>
 					<a href={LorenzoParasResume} style={{color: 'white'}} download>Resume</a>
-				</Button>
+				</Button> */}
+				<ExperienceGrid/>
 			</div>
 		</FadeIn>
 	);

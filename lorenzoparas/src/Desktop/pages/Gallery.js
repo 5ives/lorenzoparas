@@ -14,7 +14,7 @@ const contentStyle = {
 
 const headerStyle = {
     color: 'white',
-    fontSize: '100px',
+    fontSize: '90px',
     letterSpacing: '1px',
     fontWeight: '600',
     display: 'flex',
@@ -23,7 +23,7 @@ const headerStyle = {
 
 const subHeaderStyle = {
     color: 'lightgrey',
-    fontSize: '50px'
+    fontSize: '45px'
 };
 
 function Gallery() {

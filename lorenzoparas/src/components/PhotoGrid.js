@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
-import listReactFiles from 'list-react-files'
 
 const picStyle = {
     height: '200px',
     width: '200px',
     margin: '2px',
-    borderRadius: '5px'
+    borderRadius: '16px'
 }
 
 const picWrapperStyle = {
-    textAlign: 'center'
+    textAlign: 'center',
+    display: 'flex',
+    flexWrap: 'wrap'
 }
 
 function PhotoGrid() {

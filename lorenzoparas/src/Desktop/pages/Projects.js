@@ -1,5 +1,5 @@
 import FadeIn from 'react-fade-in';
-import { Fade } from "@material-ui/core";
+import ProjectGrid from '../../components/ProjectGrid';
 
 const contentStyle = {
     margin: '8vh 8vw 8vh 8vw',
@@ -9,12 +9,12 @@ const contentStyle = {
     marginLeft: '8vw',
 	width: 'min(1200px, 65vw)',
 	position: 'relative',
-    flexDirection: 'column',
+    flexDirection: 'column'
 }
 
 const headerStyle = {
     color: 'white',
-    fontSize: '100px',
+    fontSize: '90px',
     letterSpacing: '1px',
     fontWeight: '600',
     display: 'flex',
@@ -23,13 +23,7 @@ const headerStyle = {
 
 const subHeaderStyle = {
     color: 'lightgrey',
-    fontSize: '50px'
-};
-
-const projectStyle = {
-    color: 'lightgrey',
-    fontSize: '50px',
-    textDecoration: 'none'
+    fontSize: '45px'
 };
 
 function Projects() {
@@ -44,12 +38,7 @@ function Projects() {
                         (stuff i've worked on)
                     </h3>
                 </div>
-                <a rel="noreferrer" target="_blank" href="https://github.com/lorenzoparas/recipeScraper">
-                    <h3 style={projectStyle}>recipeScraper</h3>
-                </a>
-                <a rel="noreferrer" target="_blank" href="https://github.com/lorenzoparas/lorenzoparas">
-                    <h3 style={projectStyle}>lorenzoparas (this site!)</h3>
-                </a>
+                <ProjectGrid/>
             </div>
         </FadeIn>
 	);

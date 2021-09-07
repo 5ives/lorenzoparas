@@ -1,7 +1,8 @@
-import LorenzoParasResume from '../../files/LorenzoParasResume.pdf';
+// import LorenzoParasResume from '../../files/LorenzoParasResume.pdf';
 import React from 'react';
 import FadeIn from 'react-fade-in';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
+import ExperienceGrid from '../../components/ExperienceGrid';
 
 const contentStyle = {
     margin: '8vh 8vw 8vh 8vw',
@@ -17,7 +18,7 @@ const contentStyle = {
 
 const headerStyle = {
     color: 'white',
-    fontSize: '100px',
+    fontSize: '90px',
     letterSpacing: '1px',
     fontWeight: '600',
     display: 'flex',
@@ -26,7 +27,7 @@ const headerStyle = {
 
 const subHeaderStyle = {
     color: 'lightgrey',
-    fontSize: '50px'
+    fontSize: '45px'
 };
 
 function WorkExperiences() {
@@ -41,7 +42,7 @@ function WorkExperiences() {
 						(places i've worked at in the past and present)
 					</h3>
 				</div>
-				<Button 
+				{/* <Button 
 					variant="contained" 
 					color="primary"
 					type="submit"
@@ -49,7 +50,8 @@ function WorkExperiences() {
 					<a href={LorenzoParasResume} style={{color: 'white'}} download>
 						Resume
 					</a>
-				</Button>
+				</Button> */}
+				<ExperienceGrid/>
 			</div>
 		</FadeIn>
 	);
