@@ -1,7 +1,5 @@
-// import LorenzoParasResume from '../../files/LorenzoParasResume.pdf';
 import React from 'react';
 import FadeIn from 'react-fade-in';
-// import Button from '@material-ui/core/Button';
 import ExperienceGrid from '../../components/ExperienceGrid';
 
 const contentStyle = {
