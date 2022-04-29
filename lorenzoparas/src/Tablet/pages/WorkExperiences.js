@@ -42,9 +42,6 @@ function WorkExperiences() {
 						(places i've worked at in the past and present)
 					</h3>
 				</div>
-				{/* <Button variant="contained" color="primary"type="submit">
-					<a href={LorenzoParasResume} style={{color: 'white'}} download>Resume</a>
-				</Button> */}
 				<ExperienceGrid/>
 			</div>
 		</FadeIn>

@@ -4,60 +4,57 @@ import { AiOutlineCalendar } from "react-icons/ai";
 const experiences = [
     {
         position: 'Software Engineer',
+        company: 'Service NSW',
+        dates: 'June 2022 - Present',
+        description: `I'm working here now!`
+    },
+    {
+        position: 'Software Engineer',
+        company: 'Honeywell',
+        dates: 'February 2022 - June 2022',
+        description:
+            `
+            Contributed towards Honeywell's Experion R520 release and Modular Digitization
+            project through sprint contributions.
+            `
+    },
+    {
+        position: 'Software Engineer',
         company: 'ServiceRocket',
-        dates: 'June 2021 - Present',
-        description: [
+        dates: 'June 2021 - Feburary 2022',
+        description:
             `
-            Refactored the app’s query section code by applying SOLID design 
-            principles, decreasing render time by 93%.
-            `,
+            Delivered new features and fixed bugs within ServiceRocket's Reporting for 
+            Confluence (Cloud) Atlassian application.
             `
-            Implemented an expansion tree-selector using TypeScript to improve 
-            usability and accessibility for users when selecting expansions.
-            `
-        ]
     },
     {
         position: 'Software Engineer',
         company: 'Digital Presence',
         dates: 'November 2020 - June 2021',
-        description: [
+        description:
             `
-            Generated daily potential leads report for Sales team using Python 
-            by designing and implementing multiple web-scrapers which acquire a 
-            daily average of 120 lead contact details.
+            Created webscrapers to discover potential SEO clients and 
+            managed the webhosting of sites.
             `
-        ]
     },
     {
-        position: 'STEM Leaders Program',
-        company: 'Honeywell',
-        dates: 'January 2020 - February 2020',
-        description: [
+        position: 'IT Support Specialist',
+        company: 'Epiroc',
+        dates: 'Feburary 2019 - Feburary 2021',
+        description:
             `
-            Innovated the automation of a ticket follow-up system by developing 
-            Python scripts which routinely send email reminders to users 
-            worldwide, improving IT support ticket completion time by 80% and 
-            hardware asset return rate by 65%.
+            Assisted users with software and hardware related problems.
+            Managed assets and setup computers for new/existing employees.
             `
-        ]
-    },
-    {
-        position: 'Boostie',
-        company: 'Boost',
-        dates: 'January 2019 - February 2020',
-        description: [
-            `
-            Made delicious healthy fruit smoothies for customers.
-            `
-        ]
-    },
+    }
 ]
 
 const experienceStyle = {
     minHeight: '200px',
-    maxHeight: 'fit-content',
-    width: '100%',
+    minWidth: '200px',
+    maxHeight: '200px',
+    maxWidth: '200px',
     margin: '2px',
     borderRadius: '16px',
     backgroundColor: 'rgba(255, 69, 69, 0.8)',
@@ -65,7 +62,7 @@ const experienceStyle = {
     padding: '2rem 1.75rem',
     position: 'relative',
     display: 'inline-block'
-    
+
 }
 
 const experienceWrapperStyle = {
@@ -82,20 +79,26 @@ const positionStyle = {
     marginTop: '12px'
 }
 
+const companyStyle = {
+    fontFamily: 'NTR, sans-serif',
+    color: 'white',
+    fontWeight: '700',
+    marginTop: '6px'
+}
+
 const datesStyle = {
     fontFamily: 'NTR, sans-serif',
     color: 'black',
-    fontWeight: '700',
+    fontWeight: '800',
     fontSize: '12px',
     marginTop: '12px'
 }
 
 const descriptionStyle = {
-    fontFamily: 'Roboto',
+    fontFamily: 'NTR, sans-serif',
     color: 'black',
-    fontSize: '16px',
+    fontSize: '12px',
     marginTop: '12px',
-    listStyleType: 'square',
     lineHeight: 1.5
 }
 
@@ -106,18 +109,11 @@ function ExperienceGrid() {
                 experiences.map((experience) => {
                     return (
                         <div style={experienceStyle}>
-                            <AiOutlineCalendar size={"32px"} color={"white"}/>
-                            <div style={positionStyle}>{experience.position} @ {experience.company}</div>
+                            <AiOutlineCalendar size={"32px"} color={"white"} />
+                            <div style={positionStyle}>{experience.position}</div>
+                            <div style={companyStyle}>@ {experience.company}</div>
                             <div style={datesStyle}>{experience.dates}</div>
-                            <ul>
-                                {
-                                    experience.description.map(desc => {
-                                        return (
-                                            <li style={descriptionStyle}>{desc}</li>
-                                        );
-                                    })
-                                }
-                            </ul>
+                            <div style={descriptionStyle}>{experience.description}</div>
                         </div>
                     );
                 })
@@ -127,4 +123,3 @@ function ExperienceGrid() {
 }
 
 export default ExperienceGrid;
-    
