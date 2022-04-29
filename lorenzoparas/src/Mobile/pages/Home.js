@@ -86,9 +86,8 @@ function Home() {
                     <div>
                         <p style={paragraphStyle}>
                             I'm a software engineer based in <span style={{color: '#FF4545'}}>Sydney, Australia</span>,
-                            where I'm currently in my final term of my computer science
-                            degree at The University of New South Wales. I have passion
-                            in the realm of front-end development and love creating software
+                            recently graduating from my computer science degree at The University of New South Wales.
+                            I have passion in the realm of front-end development and love creating software
                             in general.
                         </p>
                     </div>

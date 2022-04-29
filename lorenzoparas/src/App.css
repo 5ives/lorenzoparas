@@ -7,6 +7,11 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 @font-face {
   font-family: 'Benne-Regular';
   src:url('./fonts/benne-regular/Benne-Regular.ttf.woff') format('woff'),
