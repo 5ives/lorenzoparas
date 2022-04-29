@@ -56,42 +56,32 @@ function About() {
                 <div style={{marginTop: '-20px'}}>       
                     <p style={paragraphStyle}>Hi, my name's Lorenzo! I'm based in
                         <strong> Sydney, Australia.</strong>
-                    </p> 
-
-                    <p style={paragraphStyle}>I'm currently a Full-Stack Software 
-                        Engineer at <strong>ServiceRocket!</strong>
                     </p>
 
-                    <p style={paragraphStyle}>I used to be a Software Engineer at a 
-                        small SEO company <strong> Digital Presence. </strong>
-                        I was generally assigned with the responsibility of 
-                        creating webscrapers to discover potential SEO clients and 
-                        managing the webhosting of sites owned by Digital Presence.
-                    </p>
-                    
-                    <p style={paragraphStyle}>I'm used to work as a Junior End User 
-                        Support Specialist at Swedish mining equipment manufacturer
-                        <strong> Epiroc. </strong> I assisted users with software and 
-                        hardware related problems, along with asset management and 
-                        building new computers for existing and new employees all 
-                        over Australia.
+                    <p style={paragraphStyle}>
+                        I'm an alumni from <strong>The University of New South Wales</strong>, having graduated in late 2021 as a Computer Science major.
                     </p>
 
-                    <p style={paragraphStyle}>I'm also completing my Computer 
-                        Science degree at <strong>The University of New South 
-                        Wales.</strong> Upon completion, I aspire to become a 
-                        software engineer/developer focused on front-end development.
+                    <p style={paragraphStyle}>
+                        Currently, I work as a Graduate Software Engineer at <strong>Honeywell</strong>!
+                    </p>
+
+                    <p style={paragraphStyle}>I used to work as a Full-Stack Software Engineer at <strong>ServiceRocket</strong>, focusing on
+                        weekly sprints which contribute towards the <a href="https://marketplace.atlassian.com/apps/186/reporting-for-confluence?tab=overview&hosting=cloud">
+                            Reporting for Confluence (Cloud)
+                        </a> Atlassian application.
                     </p>
                         
                     <p style={paragraphStyle}>Throughout my experiences, I've grown to become fluent in these technologies:</p>
 
                     <div id="languages">
                         <ul style={paragraphStyle}>
-                            <li><span>Python</span></li>
-                            <li><span>Java</span></li>
-                            <li><span>Javascript</span></li>
+                            <li><span>JavaScript/TypeScript</span></li>
                             <li><span>React</span></li>
                             <li><span>HTML/CSS</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>Java</span></li>
+                            <li><span>C++</span></li>
                             <li><span>Linux/Unix/Shell</span></li>
                             <li><span>MySQL</span></li>
                             <li><span>PostgreSQL</span></li>
