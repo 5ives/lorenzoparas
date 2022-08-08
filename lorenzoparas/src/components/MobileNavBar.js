@@ -3,6 +3,7 @@ import {
 	Link
 } from "react-router-dom";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { linkedinProfile } from "../consts/SocialLinks";
 
 const navBarStyle = {
 	display: 'flex',
@@ -78,7 +79,7 @@ function MobileNavBar() {
 					</a>
 				</div>
 				<div style={socialLinkStyle}>
-					<a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/lorenzo-paras/">
+					<a rel="noreferrer" target="_blank" href={linkedinProfile}>
 						<FaLinkedin size={"12px"} color={"white"}/>
 					</a>
 				</div>

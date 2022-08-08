@@ -3,6 +3,7 @@ import {
 	Link
 } from "react-router-dom";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { linkedinProfile } from "../consts/SocialLinks";
 
 const navBarStyle = {
 	height: 'fit-content',
@@ -65,7 +66,7 @@ function DesktopNavBar() {
 				<a rel="noreferrer" target="_blank" href="https://github.com/lorenzoparas">
 					<FaGithub size={"24px"} color={"white"}/>
 				</a>
-				<a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/lorenzo-paras/">
+				<a rel="noreferrer" target="_blank" href={linkedinProfile}>
 					<FaLinkedin size={"24px"} color={"white"}/>
 				</a>
 			</div>
