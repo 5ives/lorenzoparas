@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import MobileNavBar from '../components/MobileNavBar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,11 +11,6 @@ import {
 } from 'react-router-dom';
 
 function Mobile() {
-
-    useEffect(() => {
-        console.log("mobile view activated!");
-    }, [])
-
     return (
         <span>
             <Switch>
