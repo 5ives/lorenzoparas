@@ -29,7 +29,6 @@ function PhotoGrid() {
         <div style={picWrapperStyle}>
             {
                 (images) && images.map((i) => {
-                    console.log(i.default)
                     return (
                         <img src={i.default} style={picStyle} alt="profile-pic"/>
                     );
