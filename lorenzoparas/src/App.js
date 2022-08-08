@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import "./App.css";
 import Loader from "./components/Loader";
 import Body from "./Body";
+import { INTRO_DURATION } from './consts/IntroValues';
 
 const wrapperStyle = {
 	backgroundColor: '#212121',
@@ -18,12 +19,12 @@ function App() {
 		setLoading(true);
 		setTimeout(() => {
 			setLoading(false);
-		}, 5000)
+		}, INTRO_DURATION)
 	}, []);
 
   	return (
 		<div className="App" style={wrapperStyle}>
-			{loading ? <Loader loading={loading}/> : <Body/>}
+			{loading ? <Loader/> : <Body/>}
 		</div>
 	);
 }
