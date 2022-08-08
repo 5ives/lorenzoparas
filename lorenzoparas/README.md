@@ -138,4 +138,4 @@ Numerous npm packages have been used and taken from [npmjs](https://www.npmjs.co
 [issues-shield]: https://img.shields.io/github/issues/lorenzoparas/lorenzoparas.svg?style=for-the-badge
 [issues-url]: https://github.com/lorenzoparas/lorenzoparas/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/lorenzo-paras/
+[linkedin-url]: https://www.linkedin.com/in/lorenzoparas/
