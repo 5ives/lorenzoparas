@@ -31,7 +31,7 @@ function AlbumGrid() {
     const initAlbumOptions = async () => {
         const albumData = await getAlbums();
         const albumDataWithImage = await Promise.all(albumData.map(async album => {
-            const albumImages = await getImages(album);
+            const albumImages = await getImages(album, 1);
             return { location: album, imageUrl: albumImages[0] }
         }));
         setAlbums(albumDataWithImage);
