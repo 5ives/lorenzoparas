@@ -9,6 +9,7 @@ import {
 	Switch,
 	Route
 } from 'react-router-dom';
+import Album from './pages/Album';
 
 function Desktop() {
     return (
@@ -26,6 +27,9 @@ function Desktop() {
                 </Route>
                 <Route path='/software-projects'>
                     <Projects/>
+                </Route>
+                <Route path='/gallery/:album'>
+                    <Album/>
                 </Route>
                 <Route path='/gallery'>
                     <Gallery/>
