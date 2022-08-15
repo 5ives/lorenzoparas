@@ -21,7 +21,7 @@ const albumOptionWrapperStyle = {
     color: 'white'
 }
 
-function PhotoGrid() {
+function AlbumGrid() {
     const [albums, setAlbums] = useState([]);
 
     useEffect(() => {
@@ -55,4 +55,4 @@ function PhotoGrid() {
     );
 }
 
-export default PhotoGrid;
+export default AlbumGrid;

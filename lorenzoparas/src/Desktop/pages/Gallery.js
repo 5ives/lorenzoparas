@@ -1,5 +1,5 @@
 import FadeIn from 'react-fade-in';
-import PhotoGrid from "../../components/PhotoGrid";
+import AlbumGrid from "../../components/gallery/AlbumGrid";
 
 const contentStyle = {
     margin: '8vh 8vw 8vh 8vw',
@@ -38,7 +38,7 @@ function Gallery() {
                         (pictures from endeavours)
                     </h3>
                 </div>
-                <PhotoGrid/>
+                <AlbumGrid/>
             </div>
         </FadeIn>
     );
