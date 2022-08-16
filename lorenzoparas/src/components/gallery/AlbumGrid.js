@@ -5,20 +5,23 @@ import { Link } from 'react-router-dom';
 const albumOptionStyle = {
     height: '400px',
     width: '400px',
-    margin: '2px'
+    fontSize: '24px'
 }
 
 const albumPhotoStyle = {
-    height: '300px',
-    width: '300px',
+    height: '376px',
+    width: '376px',
     borderRadius: '16px'
 }
 
 const albumOptionWrapperStyle = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(400px, max-content))',
+    columnGap: '64px',
+    rowGap: '64px',
     textAlign: 'center',
-    display: 'flex',
-    flexWrap: 'wrap',
-    color: 'white'
+    color: 'white',
+    justifyContent: 'center'
 }
 
 function AlbumGrid() {

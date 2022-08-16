@@ -25,14 +25,14 @@ const contentStyle = {
     display: 'inline-block',
     backgroundColor: '#212121',
     marginLeft: '8vw',
-	width: 'min(1200px, 65vw)',
+	width: 'min(1200px, 84vw)',
 	position: 'relative',
-    flexDirection: 'column',
+    flexDirection: 'column'
 }
 
 const headerStyle = {
     color: 'white',
-    fontSize: '90px',
+    fontSize: '30px',
     letterSpacing: '1px',
     fontWeight: '600',
     display: 'flex',
@@ -41,7 +41,7 @@ const headerStyle = {
 
 const subHeaderStyle = {
     color: 'lightgrey',
-    fontSize: '45px'
+    fontSize: '15px'
 }
 
 const Album = () => {
@@ -64,7 +64,7 @@ const Album = () => {
                 <div style={headerStyle}>
                     /<span style={{color: '#FF4545'}}>gallery</span>
                 </div>
-                <div style={{marginTop: '-45px'}}>
+                <div>
                     <h3 style={subHeaderStyle}>
                         { decodedAlbum }
                     </h3>
@@ -72,7 +72,6 @@ const Album = () => {
                 <div style={picWrapperStyle}>
                     {
                         imageUrls && imageUrls.map(imageUrl => {
-                            console.log(imageUrl);
                             return (
                                 <img src={imageUrl} style={picStyle} alt="profile-pic"/>
                             );
@@ -81,7 +80,7 @@ const Album = () => {
                 </div>
                 </div>
         </FadeIn>
-        
+
     );
 };
 
