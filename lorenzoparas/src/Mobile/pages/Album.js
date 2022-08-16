@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import FadeIn from "react-fade-in";
 import { useParams } from "react-router-dom";
-import { getImages } from "../../services/AWSS3Service";
+import { getImages } from "../../services/aws-s3-service";
 import { Link } from "react-router-dom";
 
 const picStyle = {
