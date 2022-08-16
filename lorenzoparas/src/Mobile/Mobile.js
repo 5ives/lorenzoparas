@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import MobileNavBar from '../components/MobileNavBar';
 import Home from './pages/Home';
 import About from './pages/About';
