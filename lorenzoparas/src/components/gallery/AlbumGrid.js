@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getAlbums, getImages } from '../../services/AWSS3Service';
+import { getAlbums, getImages } from '../../services/aws-s3-service';
 import { Link } from 'react-router-dom';
 
 const albumOptionStyle = {
