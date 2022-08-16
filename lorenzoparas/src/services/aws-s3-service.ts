@@ -19,9 +19,9 @@ export const getAlbums = async () => {
             return albumPrefix ? decodeURIComponent((albumPrefix).replace('/', '')) : ''
         });
 
-        const nonEmptyalbumNames = albumNames.filter(albumName => albumName.length > 0);
+        const nonEmptyAlbumNames = albumNames.filter(albumName => isValidAlbumName(albumName));
 
-        return nonEmptyalbumNames;
+        return nonEmptyAlbumNames;
     } catch (error) {
         console.error(error);
     }
@@ -29,6 +29,8 @@ export const getAlbums = async () => {
 
 export const getImages = async (albumName: string, limit?: number) => {
     albumName = albumName.trim();
+
+    if (!isValidAlbumName(albumName)) return null;
 
     try {
         const data = await s3Client.send(
@@ -52,5 +54,10 @@ export const getImages = async (albumName: string, limit?: number) => {
         return photos
     } catch (error) {
         console.error(error);
+        return null;
     }
 };
+
+const isValidAlbumName = (albumName: string) => {
+    return albumName.length > 0 && !albumName.includes('logs');
+}
