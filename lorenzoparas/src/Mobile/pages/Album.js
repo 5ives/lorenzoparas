@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import FadeIn from "react-fade-in";
 import { useParams } from "react-router-dom";
 import { getImages } from "../../services/AWSS3Service";
+import { Link } from "react-router-dom";
 
 const picStyle = {
     height: '400px',
@@ -68,6 +69,13 @@ const Album = () => {
                     <h3 style={subHeaderStyle}>
                         { decodedAlbum }
                     </h3>
+                </div>
+                <div>
+                     <Link to="/gallery">
+                        <h3 style={subHeaderStyle}>
+                            Back to gallery ➡️
+                        </h3>
+                    </Link>
                 </div>
                 <div style={picWrapperStyle}>
                     {
