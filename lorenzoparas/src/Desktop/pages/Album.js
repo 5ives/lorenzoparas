@@ -72,7 +72,6 @@ const Album = () => {
                 <div style={picWrapperStyle}>
                     {
                         imageUrls && imageUrls.map(imageUrl => {
-                            console.log(imageUrl);
                             return (
                                 <img src={imageUrl} style={picStyle} alt="profile-pic"/>
                             );

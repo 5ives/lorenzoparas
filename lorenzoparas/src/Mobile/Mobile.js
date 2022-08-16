@@ -13,11 +13,6 @@ import {
 import Album from './pages/Album';
 
 function Mobile() {
-
-    useEffect(() => {
-        console.log("mobile view activated!");
-    }, [])
-
     return (
         <span>
             <Switch>
