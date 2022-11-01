@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0d4c4ba2-b97b-4a0e-8698-6ce5d16c157e/deploy-status)](https://app.netlify.com/sites/lorenzoparas/deploys)
+
 <p align="center">
   <h3 align="center">lorenzoparas</h3>
 
