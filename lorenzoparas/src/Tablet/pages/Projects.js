@@ -1,5 +1,6 @@
 import FadeIn from 'react-fade-in';
-import ProjectGrid from '../../components/ProjectGrid';
+import ProjectGrid from '../../components/ProjectGrid/ProjectGrid';
+import ProjectsBody from '../../components/ProjectsBody/ProjectsBody';
 
 const contentStyle = {
     margin: '8vh 8vw 8vh 8vw',
@@ -38,6 +39,7 @@ function Projects() {
                         (stuff i've worked on)
                     </h3>
                 </div>
+                <ProjectsBody/>
                 <ProjectGrid/>
             </div>
         </FadeIn>
