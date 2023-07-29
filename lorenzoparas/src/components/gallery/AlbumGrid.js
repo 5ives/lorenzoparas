@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getAlbums, getImages } from '../../services/aws-s3-service';
 import { Link } from 'react-router-dom';
+import { LinearProgress } from '@material-ui/core';
 
 const albumOptionStyle = {
     height: '400px',
@@ -26,6 +27,7 @@ const albumOptionWrapperStyle = {
 
 function AlbumGrid() {
     const [albums, setAlbums] = useState([]);
+    const [numImagesLoaded, setNumImagesLoaded] = useState(0);
 
     useEffect(() => {
         initAlbumOptions();
@@ -41,20 +43,31 @@ function AlbumGrid() {
     };
 
     return (
-        <div style={albumOptionWrapperStyle}>
-            {
-                albums && albums.map(album => {
-                    return (
-                            <div style={albumOptionStyle}>
+        <>
+            { numImagesLoaded !== albums.length && (
+                <LinearProgress variant="determinate" value={(numImagesLoaded/albums.length) * 100}/>
+            )}
+            <div style={albumOptionWrapperStyle} hidden={ numImagesLoaded !== albums.length }>
+                {
+                    albums && albums.map(album => {
+                        return (
+                            <div style={albumOptionStyle} hidden={ numImagesLoaded !== albums.length }>
                                 <Link to={`/gallery/${encodeURIComponent(album.location)}`}>
-                                    <img src={album.imageUrl} style={albumPhotoStyle} alt={album.location}/>
+                                    <img
+                                        hidden={ numImagesLoaded !== albums.length }
+                                        src={album.imageUrl}
+                                        style={albumPhotoStyle}
+                                        alt={album.location}
+                                        onLoad={() => setNumImagesLoaded(numImagesLoaded => numImagesLoaded + 1)}
+                                    />
                                 </Link>
                                 <div>{ album.location }</div>
                             </div>
-                    );
-                })
-            }
-        </div>
+                        );
+                    })
+                }
+            </div>
+        </>
     );
 }
 
